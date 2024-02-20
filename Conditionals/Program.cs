@@ -28,6 +28,19 @@ namespace Conditionals
 
             Console.WriteLine(number == 10 ? "Number is: 10\n" : "Number is not 10\n");
 
+            switch (number)
+            {
+                case 10:
+                    Console.WriteLine("Number is: 10\n");
+                    break;
+                case 20:
+                    Console.WriteLine("Number is: 20\n");
+                    break;
+                default:
+                    Console.WriteLine("Number is not 10 or 20\n");
+                    break;
+            }
+
             Console.ReadLine();
         }
     }
