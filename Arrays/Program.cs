@@ -20,6 +20,8 @@ namespace Arrays
                 Console.WriteLine(student);
             }
 
+            Console.WriteLine("************");
+
             string[] students2 =
             {
                 "Engin",
@@ -30,6 +32,26 @@ namespace Arrays
             foreach (var student in students2)
             {
                 Console.WriteLine(student);
+            }
+
+            Console.WriteLine("************");
+
+            string[,] regions = new string[5, 3]
+            {
+                {"İstanbul", "İzmit", "Balıkesir" },
+                {"Ankara", "Konya", "Kırıkkale" },
+                {"Antalya", "Adana", "Mersin" },
+                {"Rize", "Trabzon", "Samsun"},
+                {"İzmir", "Muğla", "Manisa" }
+            };
+
+            for (int i = 0; i < regions.GetLength(0); i++)
+            {
+                for (int j = 0; j < regions.GetLength(1); j++)
+                {
+                    Console.WriteLine($"{i+1}.{j+1}. {regions[i, j]}");
+                }
+                Console.WriteLine("************");
             }
 
             Console.ReadLine();
