@@ -33,6 +33,9 @@ namespace TypesAndVariables
             bool condition2 = false;
             Console.WriteLine("bool for condition '{0}' or '{1}'\n", condition1, condition2);
 
+            char character = 'A'; // Keeps ASCII characters.
+            Console.WriteLine("char for keeping ASCII characters like '{0}'\n", character);
+
             Console.ReadLine();
         }
     }
