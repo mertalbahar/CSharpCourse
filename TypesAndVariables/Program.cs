@@ -36,6 +36,9 @@ namespace TypesAndVariables
             char character = 'A'; // Keeps ASCII characters.
             Console.WriteLine("char for keeping ASCII characters like '{0}'\n", character);
 
+            double number9 = 10.4;
+            Console.WriteLine("double(64) for decimal '{0}'\n", number9); // double for decimal, 64 bit
+
             Console.ReadLine();
         }
     }
