@@ -37,7 +37,17 @@ namespace TypesAndVariables
             Console.WriteLine("char for keeping ASCII characters like '{0}'\n", character);
 
             double number9 = 10.4;
-            Console.WriteLine("double(64) for decimal '{0}'\n", number9); // double for decimal, 64 bit
+            Console.WriteLine("double(64) for decimal '{0}'\n", number9); // double for decimal and keeps 16 character after comma, 64 bit
+
+            decimal number10 = 10.4m;
+            Console.WriteLine("decimal(128) for decimal '{0}'\n", number10); // decimal for decimal and keeps 29 character after comma, 128 bit
+
+            // 0f for float
+            // 0d for double
+            // 0m for decimal (money)
+            // 0u for unsigned int
+            // 0l for long
+            // ul for unsigned long
 
             Console.ReadLine();
         }
