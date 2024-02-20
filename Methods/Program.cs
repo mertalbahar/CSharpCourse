@@ -22,8 +22,13 @@ namespace Methods
             int number1 = 20;
             int number2 = 100;
             var result4 = Add4(ref number1, number2);
-            Console.WriteLine(result4);
+            Console.WriteLine("number1 with ref keyword: {0}", result4);
             Console.WriteLine("Number1: {0}", number1);
+
+            int number3;
+            var result5 = Add5(out number3, number2);
+            Console.WriteLine("number3 with out keyword: {0}", result5);
+            Console.WriteLine("Number3: {0}", number3);
 
             Console.ReadLine();
         }
@@ -47,6 +52,12 @@ namespace Methods
         {
             number1 = 30;
             return number1 + number2;
+        }
+
+        static int Add5(out int number3, int number2)
+        {
+            number3 = 50;
+            return number3 + number2;
         }
     }
 }
