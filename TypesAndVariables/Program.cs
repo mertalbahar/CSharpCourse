@@ -14,20 +14,24 @@ namespace TypesAndVariables
             byte number7 = 0; // min value for byte, 8 bit
             byte number8 = 255; // min value for byte, 8 bit
 
-            Console.WriteLine("byte(8) min {0} and byte max {1}", number7, number8);
+            Console.WriteLine("byte(8) min '{0}' and byte max '{1}'\n", number7, number8);
 
             short number5 = -32768; // min value for short, 16 bit
             short number6 = 32767; // max value for short, 16 bit
 
-            Console.WriteLine("short(16) min {0} and short max {1}", number5, number6);
+            Console.WriteLine("short(16) min '{0}' and short max '{1}'\n", number5, number6);
 
             int number1 = -2147483648; // min value for int, 32 bit
             int number2 = 2147483647; // max value for int, 32 bit
-            Console.WriteLine("int(32) min {0} and int max {1}", number1, number2);
+            Console.WriteLine("int(32) min '{0}' and int max '{1}'\n", number1, number2);
 
             long number3 = -9223372036854775808; // min value for long, 64 bit
             long number4 = 9223372036854775807; // max value for long, 64 bit
-            Console.WriteLine("long(64) min {0} and long max {1}", number3, number4);
+            Console.WriteLine("long(64) min '{0}' and long max '{1}'\n", number3, number4);
+
+            bool condition1 = true;
+            bool condition2 = false;
+            Console.WriteLine("bool for condition '{0}' or '{1}'\n", condition1, condition2);
 
             Console.ReadLine();
         }
