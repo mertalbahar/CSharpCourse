@@ -14,13 +14,15 @@ namespace Conditionals
 
             if (number == 10)
             {
-                Console.WriteLine("Number is: 10");
+                Console.WriteLine("Number is: 10\n");
                 
             }
             else
             {
-                Console.WriteLine("Number is not 10");
+                Console.WriteLine("Number is not 10\n");
             }
+
+            Console.WriteLine(number == 10 ? "Number is: 10\n" : "Number is not 10\n");
 
             Console.ReadLine();
         }
