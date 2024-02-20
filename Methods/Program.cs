@@ -30,6 +30,9 @@ namespace Methods
             Console.WriteLine("number3 with out keyword: {0}", result5);
             Console.WriteLine("Number3: {0}", number3);
 
+            Console.WriteLine("Method overloading, multiply 2 number: {0}", Multiply(2,4));
+            Console.WriteLine("Method overloading, multiply 3 number: {0}", Multiply(2, 4, 5));
+
             Console.ReadLine();
         }
 
@@ -58,6 +61,16 @@ namespace Methods
         {
             number3 = 50;
             return number3 + number2;
+        }
+
+        static int Multiply(int number1, int number2)
+        {
+            return number1 * number2;
+        }
+
+        static int Multiply(int number1, int number2, int number3)
+        {
+            return number1 * number2 * number3;
         }
     }
 }
