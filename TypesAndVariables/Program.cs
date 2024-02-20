@@ -49,7 +49,10 @@ namespace TypesAndVariables
             // 0l for long
             // ul for unsigned long
 
-            Console.WriteLine((int)Days.Friday);
+            Console.WriteLine("The day is {0} and the number is {1}", Days.Friday, (int)Days.Friday);
+
+            var number11 = 'A';
+            Console.WriteLine((int)number11);
 
             Console.ReadLine();
         }
