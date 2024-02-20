@@ -12,17 +12,27 @@ namespace Methods
         {
             Add();
             var result = Add2(20, 30);
-            Console.WriteLine(result);
+            Console.WriteLine("Add with parameter: {0}", result);
+
+            var result2 = Add3();
+            var result3 = Add3(10, 20);
+            Console.WriteLine("Add with default parameter: {0}", result2);
+            Console.WriteLine("Add with given parameter: {0}", result3);
 
             Console.ReadLine();
         }
 
         static void Add()
         {
-            Console.WriteLine("Added!");
+            Console.WriteLine("Added without parameter");
         }
 
         static int Add2(int number1, int number2)
+        {
+            return number1 + number2;
+        }
+
+        static int Add3(int number1 = 30, int number2 = 30)
         {
             return number1 + number2;
         }
