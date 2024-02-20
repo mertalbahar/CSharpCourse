@@ -49,7 +49,14 @@ namespace TypesAndVariables
             // 0l for long
             // ul for unsigned long
 
+            Console.WriteLine((int)Days.Friday);
+
             Console.ReadLine();
         }
+    }
+
+    enum Days // Enum is magic string
+    {
+        Monday = 10, Tuesday = 20, Wednesday, Thursday, Friday, Saturday, Sunday
     }
 }
