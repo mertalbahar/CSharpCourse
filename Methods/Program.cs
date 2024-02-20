@@ -19,6 +19,12 @@ namespace Methods
             Console.WriteLine("Add with default parameter: {0}", result2);
             Console.WriteLine("Add with given parameter: {0}", result3);
 
+            int number1 = 20;
+            int number2 = 100;
+            var result4 = Add4(ref number1, number2);
+            Console.WriteLine(result4);
+            Console.WriteLine("Number1: {0}", number1);
+
             Console.ReadLine();
         }
 
@@ -34,6 +40,12 @@ namespace Methods
 
         static int Add3(int number1 = 30, int number2 = 30)
         {
+            return number1 + number2;
+        }
+
+        static int Add4(ref int number1, int number2)
+        {
+            number1 = 30;
             return number1 + number2;
         }
     }
