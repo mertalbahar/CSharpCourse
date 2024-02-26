@@ -10,6 +10,16 @@ namespace Interfaces
     {
         static void Main(string[] args)
         {
+            // InterfacesIntro();
+
+            CustomerManager customerManager = new CustomerManager();
+            customerManager.Add(new OracleCustomerDal());
+
+            Console.ReadLine();
+        }
+
+        private static void InterfacesIntro()
+        {
             PersonManager manager = new PersonManager();
 
             Customer customer = new Customer
@@ -39,8 +49,6 @@ namespace Interfaces
             manager.Add(customer);
             manager.Add(student);
             manager.Add(worker);
-
-            Console.ReadLine();
         }
     }
 
